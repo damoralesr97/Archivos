@@ -22,9 +22,15 @@ public class Principal {
         if(raiz.exists()==false){
             raiz.mkdir();
         }
-        File directorio =new File("c:/raiz/directorio");
+        
         for(int i=0;i<=1000;i++){
-            
+            File directorio = new File("c:/raiz/directorio"+i);
+            directorio.mkdir();
+        }
+        
+        for(int i=0;i<=500;i++){
+            File directorio = new File("c:/raiz/directorio"+i);
+            directorio.delete();
         }
     }
     
